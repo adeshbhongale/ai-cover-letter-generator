@@ -1,19 +1,15 @@
 import { ArrowRight, BarChart, Clock, Download, Edit, FileText, Globe, Shield, Sparkles, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const FadeIn = ({ children }) => <>{children}</>;
-const StaggerChildren = ({ children }) => <>{children}</>;
-const StaggerItem = ({ children }) => <>{children}</>;
-
-const Button = ({ children, ...props }) => (
-    <button {...props}>{children}</button>
-);
+import FadeIn from "./ui-animation/FadeIn";
+import StaggerChildren from "./ui-animation/StaggerChildren";
+import StaggerItem from "./ui-animation/StaggerItem";
+import { Button } from "./ui/button";
 
 export default function FeaturesPage() {
     return (
-        <div className="pt-20">
+        <div className="pt-10">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/10 to-background py-20 px-4 mt-16 transition-shadow duration-300">
+            <section className="bg-gradient-to-b from-primary/10 to-background py-10 px-4 mt-16">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col items-center text-center space-y-6">
                         <FadeIn delay={0.2}>
@@ -30,7 +26,7 @@ export default function FeaturesPage() {
             </section>
 
             {/* Main Features */}
-            <section className="py-20 px-4 transition-shadow duration-300">
+            <section className="py-10 px-4 transition-shadow duration-300">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn delay={0.2}>
                         <h2 className="text-3xl font-bold text-center mb-16">Core Features</h2>
@@ -81,7 +77,7 @@ export default function FeaturesPage() {
             </section>
 
             {/* Additional Features */}
-            <section className="py-20 px-4 bg-muted/50 transition-shadow duration-300">
+            <section className="py-10 px-4 bg-muted/50 transition-shadow duration-300">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn delay={0.2}>
                         <h2 className="text-3xl font-bold text-center mb-16">Additional Features</h2>
@@ -176,7 +172,7 @@ export default function FeaturesPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-4 bg-primary text-primary-foreground transition-shadow duration-300">
+            <section className="py-10 px-4 flex justify-center items-center w-full bg-primary text-primary-foreground transition-shadow duration-300">
                 <div className="container mx-auto max-w-5xl text-center">
                     <FadeIn>
                         <h2 className="text-3xl font-bold mb-6">Ready to Experience These Features?</h2>
@@ -188,7 +184,7 @@ export default function FeaturesPage() {
                     </FadeIn>
                     <FadeIn>
                         <Link to="/create">
-                            <Button size="lg" className="group">
+                            <Button className=" rounded-lg border md:flex-row mx-auto gap-x-2 group bg-sky-200" size="lg" >
                                 Create Your Cover Letter Now
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Button>

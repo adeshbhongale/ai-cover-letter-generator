@@ -70,11 +70,11 @@ export default function CreateCoverLetter() {
     };
 
     return (
-        <div className="container mx-auto py-10 px-4 max-w-5xl">
-            <h1 className="text-3xl font-bold text-center mb-6">Create Your Cover Letter</h1>
+        <div className="container mx-auto py-20 px-4 max-w-5xl">
+            <h1 className="text-5xl font-bold text-center mb-7">Create Your Cover Letter</h1>
 
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                <TabsList className="grid grid-cols-4 mb-8">
+                <TabsList className="grid grid-cols-4 mb-7">
                     <TabsTrigger value="personal">Personal Info</TabsTrigger>
                     <TabsTrigger value="job">Job Details</TabsTrigger>
                     <TabsTrigger value="skills">Skills & Experience</TabsTrigger>
@@ -94,7 +94,7 @@ export default function CreateCoverLetter() {
                             <Input id="linkedin" value={personalFormData.linkedin} onChange={handleInputChange(setPersonalFormData)} placeholder="LinkedIn Profile" />
                         </CardContent>
                         <CardFooter>
-                            <Button onClick={() => setActiveTab("job")} className="ml-auto">
+                            <Button onClick={() => setActiveTab("job")} variant="outline" className="ml-auto">
                                 Next: Job Details
                             </Button>
                         </CardFooter>
@@ -115,7 +115,7 @@ export default function CreateCoverLetter() {
                             <Button variant="outline" onClick={() => setActiveTab("personal")}>
                                 Back
                             </Button>
-                            <Button onClick={() => setActiveTab("skills")}>Next: Skills & Experience</Button>
+                            <Button variant="outline" onClick={() => setActiveTab("skills")}>Next: Skills & Experience</Button>
                         </CardFooter>
                     </Card>
                 </TabsContent>
@@ -148,7 +148,7 @@ export default function CreateCoverLetter() {
                             <Button variant="outline" onClick={() => setActiveTab("job")}>
                                 Back
                             </Button>
-                            <Button onClick={handleGenerateCoverLetter} disabled={loading}>
+                            <Button variant="outline" onClick={handleGenerateCoverLetter} disabled={loading}>
                                 {loading ? <Loader2 className="animate-spin" /> : "Generate Cover Letter"}
                             </Button>
                         </CardFooter>

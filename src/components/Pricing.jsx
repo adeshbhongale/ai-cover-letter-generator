@@ -8,9 +8,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 export default function PricingPage() {
     return (
-        <div className="pt-20">
+        <div className="pt-10">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/10 to-background py-20 px-4 mt-16">
+            <section className="bg-gradient-to-b from-primary/10 to-background py-10 px-4 mt-16">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col items-center text-center space-y-6">
                         <FadeIn>
@@ -26,7 +26,7 @@ export default function PricingPage() {
             </section>
 
             {/* Pricing Plans */}
-            <section className="py-20 px-4">
+            <section className="py-10 px-4">
                 <div className="container mx-auto max-w-5xl">
                     <StaggerChildren>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -62,7 +62,7 @@ export default function PricingPage() {
                                     </CardContent>
                                     <CardFooter>
                                         <Link to="/create" className="w-full">
-                                            <Button variant="outline" className="w-full">
+                                            <Button variant="outline" className="w-full bg-sky-200">
                                                 Get Started
                                             </Button>
                                         </Link>
@@ -72,7 +72,7 @@ export default function PricingPage() {
 
                             <StaggerItem>
                                 <Card className="border-2 border-primary relative md:scale-105 shadow-lg">
-                                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white px-4 py-1 rounded-full text-sm font-medium">
                                         Most Popular
                                     </div>
                                     <CardHeader>
@@ -113,7 +113,9 @@ export default function PricingPage() {
                                     </CardContent>
                                     <CardFooter>
                                         <Link to="/create" className="w-full">
-                                            <Button className="w-full">Choose Pro</Button>
+                                            <Button variant="outline" className="w-full bg-sky-200">
+                                                Choose Pro
+                                            </Button>
                                         </Link>
                                     </CardFooter>
                                 </Card>
@@ -159,7 +161,7 @@ export default function PricingPage() {
                                     </CardContent>
                                     <CardFooter>
                                         <Link to="/contact" className="w-full">
-                                            <Button variant="outline" className="w-full">
+                                            <Button variant="outline" className="w-full bg-sky-200">
                                                 Contact Sales
                                             </Button>
                                         </Link>
@@ -172,7 +174,7 @@ export default function PricingPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-20 px-4 bg-muted/50">
+            <section className="py-10 px-4 bg-muted/50">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-16">Frequently Asked Questions</h2>
@@ -221,7 +223,7 @@ export default function PricingPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-4 bg-primary text-primary-foreground">
+            <section className="py-10 px-4 bg-primary text-primary-foreground">
                 <div className="container mx-auto max-w-5xl text-center">
                     <FadeIn>
                         <h2 className="text-3xl font-bold mb-6">Ready to Create Professional Cover Letters?</h2>
@@ -233,7 +235,7 @@ export default function PricingPage() {
                     </FadeIn>
                     <FadeIn delay={0.4}>
                         <Link to="/create">
-                            <Button size="lg" variant="secondary" className="group">
+                            <Button size="lg" variant="outline" className="group bg-sky-200">
                                 Get Started for Free
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Button>

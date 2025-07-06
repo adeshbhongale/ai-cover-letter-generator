@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer className="border-t bg-blue-700">
+        <footer className="border-t bg-gray-950 text-white">
             <div className="container mx-auto px-4 py-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
@@ -11,7 +11,7 @@ export default function Footer() {
                             <FileText className="h-6 w-6 text-primary" />
                             <span className="text-xl font-bold">CoverLetterAI</span>
                         </div>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-muted-foreground px-10">
                             AI-powered cover letter generator to help you land your dream job.
                         </p>
                     </div>

@@ -7,7 +7,7 @@ import { Button } from "../components/ui/button";
 
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen pt-10">
             {/* Hero Section */}
             <section className="bg-gradient-to-b from-primary/10 to-background py-20 px-4">
                 <div className="container mx-auto max-w-5xl">
@@ -23,7 +23,7 @@ export default function Home() {
                         </FadeIn>
                         <FadeIn delay={0.4}>
                             <Link to="/create">
-                                <Button size="lg" className="mt-4 group">
+                                <Button variant="outline" size="lg" className="flex flex-wrap items-center gap-2 md:flex-row bg-sky-200">
                                     Create Cover Letter
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>
@@ -34,7 +34,7 @@ export default function Home() {
             </section>
 
             {/* Features Section */}
-            <section className="py-20 px-4" id="features">
+            <section className="py-5 px-4" id="features">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our AI Cover Letter Generator</h2>
@@ -49,7 +49,7 @@ export default function Home() {
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">AI-Powered</h3>
                                     <p className="text-muted-foreground">
-                                        Our advanced AI analyzes job descriptions to create perfectly tailored cover letters.
+                                        AI analyzes job descriptions to create perfectly tailored cover letters.
                                     </p>
                                 </div>
                             </StaggerItem>
@@ -81,7 +81,7 @@ export default function Home() {
                     <FadeIn delay={0.6}>
                         <div className="text-center mt-12">
                             <Link to="/features">
-                                <Button variant="outline" size="lg" className="group">
+                                <Button variant="outline" size="lg" className="group bg-sky-200">
                                     Explore All Features
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>
@@ -92,7 +92,7 @@ export default function Home() {
             </section>
 
             {/* How It Works Section */}
-            <section className="py-20 px-4 bg-muted/50" id="how-it-works">
+            <section className="py-10 px-4 bg-muted/50" id="how-it-works">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
@@ -101,36 +101,36 @@ export default function Home() {
                     <StaggerChildren staggerDelay={0.15}>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <StaggerItem>
-                                <div className="flex flex-col items-center text-center">
+                                <div className="flex flex-col items-center border rounded-lg text-center">
                                     <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
                                         1
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Enter Your Details</h3>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground mb-6">
                                         Fill in your personal information, job details, and qualifications.
                                     </p>
                                 </div>
                             </StaggerItem>
 
                             <StaggerItem>
-                                <div className="flex flex-col items-center text-center">
+                                <div className="flex flex-col items-center border rounded-lg text-center">
                                     <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
                                         2
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">AI Generation</h3>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground mb-6">
                                         Our AI analyzes your input and creates a tailored cover letter.
                                     </p>
                                 </div>
                             </StaggerItem>
 
                             <StaggerItem>
-                                <div className="flex flex-col items-center text-center">
+                                <div className="flex flex-col items-center border rounded-lg text-center">
                                     <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
                                         3
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Download & Apply</h3>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground mb-6">
                                         Edit if needed, download your cover letter, and apply with confidence.
                                     </p>
                                 </div>
@@ -141,7 +141,7 @@ export default function Home() {
                     <FadeIn delay={0.6}>
                         <div className="text-center mt-12">
                             <Link to="/how-it-works">
-                                <Button variant="outline" size="lg" className="group">
+                                <Button variant="outline" size="lg" className="group bg-sky-200">
                                     Learn More
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>
@@ -152,7 +152,7 @@ export default function Home() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-4 bg-primary text-primary-foreground">
+            <section className="py-10 px-4 bg-primary text-primary-foreground">
                 <div className="container mx-auto max-w-5xl text-center">
                     <FadeIn>
                         <h2 className="text-3xl font-bold mb-6">Ready to Create Your Perfect Cover Letter?</h2>
@@ -164,7 +164,7 @@ export default function Home() {
                     </FadeIn>
                     <FadeIn delay={0.4}>
                         <Link to="/create">
-                            <Button size="lg" variant="secondary" className="group">
+                            <Button size="lg" variant="outline" className="group bg-sky-200">
                                 Create Your Cover Letter Now
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Button>

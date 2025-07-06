@@ -6,9 +6,9 @@ import { Button } from "./ui/button";
 
 export default function HowItWorksPage() {
     return (
-        <div className="pt-20">
+        <div className="pt-5">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/10 to-background py-20 px-4 mt-16">
+            <section className="bg-gradient-to-b from-primary/10 to-background py-10 px-4 mt-16">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col items-center text-center space-y-6">
                         <FadeIn delay={0.2}>
@@ -24,7 +24,7 @@ export default function HowItWorksPage() {
             </section>
 
             {/* Step by Step Process */}
-            <section className="py-20 px-4">
+            <section className="py-10 px-4">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-16">The Process</h2>
@@ -35,7 +35,7 @@ export default function HowItWorksPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <FadeIn direction="left">
                                 <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
                                         <PenTool className="h-16 w-16 text-primary/50" />
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ export default function HowItWorksPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
                             <FadeIn direction="right" className="md:order-2">
                                 <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
                                         <Sparkles className="h-16 w-16 text-primary/50" />
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ export default function HowItWorksPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <FadeIn direction="left">
                                 <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
                                         <FileText className="h-16 w-16 text-primary/50" />
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
                             <FadeIn direction="right" className="md:order-2">
                                 <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
                                         <Download className="h-16 w-16 text-primary/50" />
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@ export default function HowItWorksPage() {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-20 px-4 bg-muted/50">
+            <section className="py-10 px-4 bg-muted/50">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-16">Why This Process Works</h2>
@@ -194,7 +194,7 @@ export default function HowItWorksPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-4 bg-primary text-primary-foreground">
+            <section className="py-10 px-4 bg-primary text-primary-foreground">
                 <div className="container mx-auto max-w-5xl text-center">
                     <FadeIn>
                         <h2 className="text-3xl font-bold mb-6">Ready to Try It Yourself?</h2>
@@ -207,7 +207,7 @@ export default function HowItWorksPage() {
                     </FadeIn>
                     <FadeIn delay={0.4}>
                         <a href="/create">
-                            <Button size="lg" variant="secondary" className="group">
+                            <Button size="lg" variant="outline" className="group bg-sky-200">
                                 Create Your Cover Letter Now
                                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                             </Button>
