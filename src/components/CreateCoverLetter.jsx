@@ -21,6 +21,8 @@ export default function CreateCoverLetter() {
     const [jobFormData, setJobFormData] = useState({
         jobTitle: "",
         company: "",
+        hiringManager: "",
+        department: "",
         jobDescription: "",
     });
 
@@ -28,7 +30,7 @@ export default function CreateCoverLetter() {
         skills: "",
         experience: "",
         education: "",
-        university: "",
+        college: "",
         achievements: "",
         tone: "professional",
     });
@@ -70,15 +72,27 @@ export default function CreateCoverLetter() {
     };
 
     return (
-        <div className="container mx-auto py-20 px-4 max-w-5xl">
-            <h1 className="text-5xl font-bold text-center mb-7">Create Your Cover Letter</h1>
+        <div className="container mx-auto py-10 px-4 max-w-5xl">
+            <h1 className="text-5xl font-bold text-center mb-10 mt-10">Create Your Cover Letter</h1>
 
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                <TabsList className="grid grid-cols-4 mb-7">
-                    <TabsTrigger value="personal">Personal Info</TabsTrigger>
-                    <TabsTrigger value="job">Job Details</TabsTrigger>
-                    <TabsTrigger value="skills">Skills & Experience</TabsTrigger>
-                    <TabsTrigger value="preview">Preview</TabsTrigger>
+                <TabsList className="grid grid-cols-4 mb-5">
+                    {["personal", "job", "skills", "preview"].map((tab) => (
+                        <TabsTrigger
+                            key={tab}
+                            value={tab}
+                            className={
+                                activeTab === tab
+                                    ? "bg-black text-white"
+                                    : ""
+                            }
+                        >
+                            {tab === "personal" && "Personal Info"}
+                            {tab === "job" && "Job Details"}
+                            {tab === "skills" && "Skills & Experience"}
+                            {tab === "preview" && "Preview"}
+                        </TabsTrigger>
+                    ))}
                 </TabsList>
 
                 <TabsContent value="personal">
@@ -94,7 +108,7 @@ export default function CreateCoverLetter() {
                             <Input id="linkedin" value={personalFormData.linkedin} onChange={handleInputChange(setPersonalFormData)} placeholder="LinkedIn Profile" />
                         </CardContent>
                         <CardFooter>
-                            <Button onClick={() => setActiveTab("job")} variant="outline" className="ml-auto">
+                            <Button onClick={() => setActiveTab("job")} className="ml-auto">
                                 Next: Job Details
                             </Button>
                         </CardFooter>
@@ -109,13 +123,15 @@ export default function CreateCoverLetter() {
                         <CardContent className="space-y-4">
                             <Input id="jobTitle" value={jobFormData.jobTitle} onChange={handleInputChange(setJobFormData)} placeholder="Job Title" />
                             <Input id="company" value={jobFormData.company} onChange={handleInputChange(setJobFormData)} placeholder="Company Name" />
+                            <Input id="hiringManager" value={jobFormData.hiringManager} onChange={handleInputChange(setJobFormData)} placeholder="Hiring Manager (optional)" />
+                            <Input id="department" value={jobFormData.department} onChange={handleInputChange(setJobFormData)} placeholder="Department (optional)" />
                             <Textarea id="jobDescription" value={jobFormData.jobDescription} onChange={handleInputChange(setJobFormData)} placeholder="Job Description" />
                         </CardContent>
                         <CardFooter className="flex justify-between">
                             <Button variant="outline" onClick={() => setActiveTab("personal")}>
                                 Back
                             </Button>
-                            <Button variant="outline" onClick={() => setActiveTab("skills")}>Next: Skills & Experience</Button>
+                            <Button onClick={() => setActiveTab("skills")}>Next: Skills & Experience</Button>
                         </CardFooter>
                     </Card>
                 </TabsContent>
@@ -129,7 +145,7 @@ export default function CreateCoverLetter() {
                             <Input id="skills" value={skillsFormData.skills} onChange={handleInputChange(setSkillsFormData)} placeholder="Key Skills" />
                             <Textarea id="experience" value={skillsFormData.experience} onChange={handleInputChange(setSkillsFormData)} placeholder="Relevant Experience" />
                             <Input id="education" value={skillsFormData.education} onChange={handleInputChange(setSkillsFormData)} placeholder="Education" />
-                            <Input id="university" value={skillsFormData.university} onChange={handleInputChange(setSkillsFormData)} placeholder="University" />
+                            <Input id="college" value={skillsFormData.college} onChange={handleInputChange(setSkillsFormData)} placeholder="college" />
                             <Textarea id="achievements" value={skillsFormData.achievements} onChange={handleInputChange(setSkillsFormData)} placeholder="Achievements" />
                             <Select defaultValue={skillsFormData.tone} onValueChange={(val) => setSkillsFormData((prev) => ({ ...prev, tone: val }))}>
                                 <SelectTrigger id="tone">
@@ -148,7 +164,7 @@ export default function CreateCoverLetter() {
                             <Button variant="outline" onClick={() => setActiveTab("job")}>
                                 Back
                             </Button>
-                            <Button variant="outline" onClick={handleGenerateCoverLetter} disabled={loading}>
+                            <Button onClick={handleGenerateCoverLetter} disabled={loading}>
                                 {loading ? <Loader2 className="animate-spin" /> : "Generate Cover Letter"}
                             </Button>
                         </CardFooter>

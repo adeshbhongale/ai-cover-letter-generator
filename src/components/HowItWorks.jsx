@@ -8,7 +8,7 @@ export default function HowItWorksPage() {
     return (
         <div className="pt-5">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/10 to-background py-10 px-4 mt-16">
+            <section className="bg-gradient-to-b from-primary to-background py-10 px-4 mt-16">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col items-center text-center space-y-6">
                         <FadeIn delay={0.2}>
@@ -34,9 +34,9 @@ export default function HowItWorksPage() {
                         {/* Step 1 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <FadeIn direction="left">
-                                <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
-                                        <PenTool className="h-16 w-16 text-primary/50" />
+                                <div className="bg-muted rounded-lg p-8 h-full">
+                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                        <PenTool className="h-16 w-16 text-primary" />
                                     </div>
                                 </div>
                             </FadeIn>
@@ -63,9 +63,9 @@ export default function HowItWorksPage() {
                         {/* Step 2 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
                             <FadeIn direction="right" className="md:order-2">
-                                <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
-                                        <Sparkles className="h-16 w-16 text-primary/50" />
+                                <div className="bg-muted rounded-lg p-8 h-full">
+                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                        <Sparkles className="h-16 w-16 text-primary" />
                                     </div>
                                 </div>
                             </FadeIn>
@@ -92,9 +92,9 @@ export default function HowItWorksPage() {
                         {/* Step 3 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <FadeIn direction="left">
-                                <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
-                                        <FileText className="h-16 w-16 text-primary/50" />
+                                <div className="bg-muted rounded-lg p-8 h-full">
+                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                        <FileText className="h-16 w-16 text-primary" />
                                     </div>
                                 </div>
                             </FadeIn>
@@ -121,9 +121,9 @@ export default function HowItWorksPage() {
                         {/* Step 4 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center md:flex-row-reverse">
                             <FadeIn direction="right" className="md:order-2">
-                                <div className="bg-muted/50 rounded-lg p-8 h-full">
-                                    <div className="aspect-video bg-card border rounded-lg flex items-center justify-center">
-                                        <Download className="h-16 w-16 text-primary/50" />
+                                <div className="bg-muted rounded-lg p-8 h-full">
+                                    <div className="aspect-video bg-card rounded-lg flex items-center justify-center">
+                                        <Download className="h-16 w-16 text-primary" />
                                     </div>
                                 </div>
                             </FadeIn>
@@ -151,7 +151,7 @@ export default function HowItWorksPage() {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-10 px-4 bg-muted/50">
+            <section className="py-10 px-4 bg-muted">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-16">Why This Process Works</h2>
@@ -160,7 +160,7 @@ export default function HowItWorksPage() {
                     <StaggerChildren>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <StaggerItem>
-                                <div className="p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300 h-full">
+                                <div className="p-6 rounded-lg bg-card hover:shadow-md transition-shadow duration-300 h-full">
                                     <h3 className="text-xl font-semibold mb-4">Tailored to Job Requirements</h3>
                                     <p className="text-muted-foreground">
                                         Our AI analyzes the job description to highlight your most relevant skills and experience,
@@ -170,7 +170,7 @@ export default function HowItWorksPage() {
                             </StaggerItem>
 
                             <StaggerItem>
-                                <div className="p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300 h-full">
+                                <div className="p-6 rounded-lg bg-card hover:shadow-md transition-shadow duration-300 h-full">
                                     <h3 className="text-xl font-semibold mb-4">Professional Formatting</h3>
                                     <p className="text-muted-foreground">
                                         Your cover letter will have a clean, professional layout that makes a great first impression on
@@ -180,7 +180,7 @@ export default function HowItWorksPage() {
                             </StaggerItem>
 
                             <StaggerItem>
-                                <div className="p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300 h-full">
+                                <div className="p-6 rounded-lg bg-card hover:shadow-md transition-shadow duration-300 h-full">
                                     <h3 className="text-xl font-semibold mb-4">Time Efficiency</h3>
                                     <p className="text-muted-foreground">
                                         What would normally take hours to write is completed in minutes, allowing you to apply to more jobs

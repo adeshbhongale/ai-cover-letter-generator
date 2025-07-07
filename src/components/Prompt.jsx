@@ -16,7 +16,7 @@ export async function generateCoverLetter(
     }
 
     const prompt = `
-    You are an expert in writing professional, engaging, and tailored cover letters. 
+    You are an expert in writing professional, engaging, and tailored cover letters.
     Based on the details provided, generate a compelling cover letter that aligns with the job role.
     
     ### Personal Information:
@@ -36,16 +36,16 @@ export async function generateCoverLetter(
     ### Skills & Experience:
     - **Key Skills:** ${skillsData.skills}
     - **Experience:** ${skillsData.experience}
-    - **Education:** ${skillsData.education} (${skillsData.university})
+    - **Education:** ${skillsData.education} (${skillsData.college})
     - **Achievements:** ${skillsData.achievements || "Not specified"}
     
     ### Cover Letter Requirements:
     - **Tone:** Write in a ${skillsData.tone} tone.
     - **Personalization:** Address the hiring manager (if provided) and mention why the candidate is a great fit for the role.
-    - **Structure:** 
-      1. Introduction: Express enthusiasm for the role and company.  
-      2. Body: Highlight relevant experience, skills, and achievements that match the job description.  
-      3. Conclusion: Reinforce interest, invite further discussion, and include a closing statement.  
+    - **Structure:**
+      1. Introduction: Express enthusiasm for the role and company.
+      2. Body: Highlight relevant experience, skills, and achievements that match the job description.
+      3. Conclusion: Reinforce interest, invite further discussion, and include a closing statement.
     
     Ensure the cover letter is well-structured, free of errors, and professional while remaining engaging and concise.
     `;

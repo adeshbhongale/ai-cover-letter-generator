@@ -7,9 +7,9 @@ import { Button } from "../components/ui/button";
 
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen pt-10">
+        <div className="flex flex-col min-h-screen pt-20">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/10 to-background py-20 px-4">
+            <section className="bg-gradient-to-b from-primary to-background py-20 px-4">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col items-center text-center space-y-6">
                         <FadeIn>
@@ -23,7 +23,7 @@ export default function Home() {
                         </FadeIn>
                         <FadeIn delay={0.4}>
                             <Link to="/create">
-                                <Button variant="outline" size="lg" className="flex flex-wrap items-center gap-2 md:flex-row bg-sky-200">
+                                <Button size="lg" className="flex flex-wrap items-center gap-2 md:flex-row group mt-5">
                                     Create Cover Letter
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>
@@ -34,18 +34,18 @@ export default function Home() {
             </section>
 
             {/* Features Section */}
-            <section className="py-5 px-4" id="features">
+            <section className="py-10 px-4" id="features">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
-                        <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our AI Cover Letter Generator</h2>
+                        <h2 className="text-3xl font-bold text-center mb-22">Why Choose Our AI Cover Letter Generator</h2>
                     </FadeIn>
 
                     <StaggerChildren>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                             <StaggerItem>
-                                <div className="flex flex-col items-center text-center p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
+                                <div className="flex flex-col items-center text-center p-6 rounded-lg border hover:shadow-md transition-shadow duration-300">
                                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                        <Sparkles className="h-6 w-6 text-primary" />
+                                        <Sparkles className="h-10 w-10 text-primary" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">AI-Powered</h3>
                                     <p className="text-muted-foreground">
@@ -57,7 +57,7 @@ export default function Home() {
                             <StaggerItem>
                                 <div className="flex flex-col items-center text-center p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
                                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                        <Clock className="h-6 w-6 text-primary" />
+                                        <Clock className="h-10 w-10 text-primary" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Save Time</h3>
                                     <p className="text-muted-foreground">Generate professional cover letters in seconds, not hours.</p>
@@ -67,7 +67,7 @@ export default function Home() {
                             <StaggerItem>
                                 <div className="flex flex-col items-center text-center p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
                                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                        <FileText className="h-6 w-6 text-primary" />
+                                        <FileText className="h-10 w-10 text-primary" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Customizable</h3>
                                     <p className="text-muted-foreground">
@@ -79,9 +79,9 @@ export default function Home() {
                     </StaggerChildren>
 
                     <FadeIn delay={0.6}>
-                        <div className="text-center mt-12">
+                        <div className="text-center mt-22">
                             <Link to="/features">
-                                <Button variant="outline" size="lg" className="group bg-sky-200">
+                                <Button variant="outline" size="lg" className="group">
                                     Explore All Features
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>
@@ -92,7 +92,7 @@ export default function Home() {
             </section>
 
             {/* How It Works Section */}
-            <section className="py-10 px-4 bg-muted/50" id="how-it-works">
+            <section className="py-20 px-4 bg-muted" id="how-it-works">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
@@ -101,8 +101,8 @@ export default function Home() {
                     <StaggerChildren staggerDelay={0.15}>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <StaggerItem>
-                                <div className="flex flex-col items-center border rounded-lg text-center">
-                                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
+                                <div className="flex flex-col items-center bg-card rounded-lg text-center mb-7">
+                                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4 mt-4">
                                         1
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Enter Your Details</h3>
@@ -113,8 +113,8 @@ export default function Home() {
                             </StaggerItem>
 
                             <StaggerItem>
-                                <div className="flex flex-col items-center border rounded-lg text-center">
-                                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
+                                <div className="flex flex-col items-center bg-card rounded-lg text-center mb-7">
+                                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4 mt-4">
                                         2
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">AI Generation</h3>
@@ -125,8 +125,8 @@ export default function Home() {
                             </StaggerItem>
 
                             <StaggerItem>
-                                <div className="flex flex-col items-center border rounded-lg text-center">
-                                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
+                                <div className="flex flex-col items-center bg-card rounded-lg text-center mb-7">
+                                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4 mt-4">
                                         3
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Download & Apply</h3>
@@ -141,7 +141,7 @@ export default function Home() {
                     <FadeIn delay={0.6}>
                         <div className="text-center mt-12">
                             <Link to="/how-it-works">
-                                <Button variant="outline" size="lg" className="group bg-sky-200">
+                                <Button variant="outline" size="lg" className="group">
                                     Learn More
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>

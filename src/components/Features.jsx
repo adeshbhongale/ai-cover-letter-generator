@@ -33,15 +33,15 @@ export default function FeaturesPage() {
                     </FadeIn>
 
                     <StaggerChildren>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                             <StaggerItem>
                                 <div className="flex flex-col items-center text-center p-6 rounded-lg border bg-card hover:shadow-md">
                                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                        <Sparkles className="h-6 w-6 text-primary" />
+                                        <Sparkles className="h-10 w-10 text-primary" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">AI-Powered Writing</h3>
                                     <p className="text-muted-foreground">
-                                        Our advanced AI analyzes job descriptions to create perfectly tailored cover letters that highlight
+                                        AI analyzes job descriptions to create perfectly tailored cover letters that highlight
                                         your relevant skills.
                                     </p>
                                 </div>
@@ -50,11 +50,11 @@ export default function FeaturesPage() {
                             <StaggerItem>
                                 <div className="flex flex-col items-center text-center p-6 rounded-lg border bg-card hover:shadow-md">
                                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                        <Clock className="h-6 w-6 text-primary" />
+                                        <Clock className="h-10 w-10 text-primary" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Time-Saving</h3>
                                     <p className="text-muted-foreground">
-                                        Generate professional cover letters in seconds, not hours. Focus on applying to more jobs instead of
+                                        Generate professional cover letters in seconds. Focus on applying to more jobs instead of
                                         writing.
                                     </p>
                                 </div>
@@ -63,7 +63,7 @@ export default function FeaturesPage() {
                             <StaggerItem>
                                 <div className="flex flex-col items-center text-center p-6 rounded-lg border bg-card hover:shadow-md">
                                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                                        <Edit className="h-6 w-6 text-primary" />
+                                        <Edit className="h-10 w-10 text-primary" />
                                     </div>
                                     <h3 className="text-xl font-semibold mb-2">Fully Customizable</h3>
                                     <p className="text-muted-foreground">
@@ -77,7 +77,7 @@ export default function FeaturesPage() {
             </section>
 
             {/* Additional Features */}
-            <section className="py-10 px-4 bg-muted/50 transition-shadow duration-300">
+            <section className="py-10 px-4 bg-muted transition-shadow duration-300">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn delay={0.2}>
                         <h2 className="text-3xl font-bold text-center mb-16">Additional Features</h2>
@@ -85,7 +85,7 @@ export default function FeaturesPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <FadeIn delay={0.2}>
-                            <div className="flex items-start p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
+                            <div className="flex items-start p-6 rounded-lg bg-card hover:shadow-md transition-shadow duration-300">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                     <Download className="h-6 w-6 text-primary" />
                                 </div>
@@ -99,7 +99,7 @@ export default function FeaturesPage() {
                         </FadeIn>
 
                         <FadeIn delay={0.2}>
-                            <div className="flex items-start p-6 rounded-lg border bg-card hover:shadow-md">
+                            <div className="flex items-start p-6 rounded-lg bg-card hover:shadow-md">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                     <FileText className="h-6 w-6 text-primary" />
                                 </div>
@@ -113,7 +113,7 @@ export default function FeaturesPage() {
                         </FadeIn>
 
                         <FadeIn>
-                            <div className="flex items-start p-6 rounded-lg border bg-card hover:shadow-md">
+                            <div className="flex items-start p-6 rounded-lg bg-card hover:shadow-md">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                     <Shield className="h-6 w-6 text-primary" />
                                 </div>
@@ -127,7 +127,7 @@ export default function FeaturesPage() {
                         </FadeIn>
 
                         <FadeIn>
-                            <div className="flex items-start p-6 rounded-lg border bg-card hover:shadow-md">
+                            <div className="flex items-start p-6 rounded-lg bg-card hover:shadow-md">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                     <BarChart className="h-6 w-6 text-primary" />
                                 </div>
@@ -141,7 +141,7 @@ export default function FeaturesPage() {
                         </FadeIn>
 
                         <FadeIn>
-                            <div className="flex items-start p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
+                            <div className="flex items-start p-6 rounded-lg bg-card hover:shadow-md transition-shadow duration-300">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                     <Zap className="h-6 w-6 text-primary" />
                                 </div>
@@ -155,7 +155,7 @@ export default function FeaturesPage() {
                         </FadeIn>
 
                         <FadeIn>
-                            <div className="flex items-start p-6 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
+                            <div className="flex items-start p-6 rounded-lg bg-card hover:shadow-md transition-shadow duration-300">
                                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
                                     <Globe className="h-6 w-6 text-primary" />
                                 </div>

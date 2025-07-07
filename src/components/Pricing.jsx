@@ -10,7 +10,7 @@ export default function PricingPage() {
     return (
         <div className="pt-10">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-primary/10 to-background py-10 px-4 mt-16">
+            <section className="bg-gradient-to-b from-primary to-background py-20 px-4 mt-10">
                 <div className="container mx-auto max-w-5xl">
                     <div className="flex flex-col items-center text-center space-y-6">
                         <FadeIn>
@@ -31,7 +31,7 @@ export default function PricingPage() {
                     <StaggerChildren>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <StaggerItem>
-                                <Card className="border-2 hover:border-primary/50 transition-colors duration-300">
+                                <Card className="border-1 hover:border-primary transition-colors duration-300">
                                     <CardHeader>
                                         <CardTitle>Free</CardTitle>
                                         <CardDescription>For casual job seekers</CardDescription>
@@ -62,7 +62,7 @@ export default function PricingPage() {
                                     </CardContent>
                                     <CardFooter>
                                         <Link to="/create" className="w-full">
-                                            <Button variant="outline" className="w-full bg-sky-200">
+                                            <Button variant="outline" className="w-full">
                                                 Get Started
                                             </Button>
                                         </Link>
@@ -72,7 +72,7 @@ export default function PricingPage() {
 
                             <StaggerItem>
                                 <Card className="border-2 border-primary relative md:scale-105 shadow-lg">
-                                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white px-4 py-1 rounded-full text-sm font-medium">
+                                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
                                         Most Popular
                                     </div>
                                     <CardHeader>
@@ -113,7 +113,7 @@ export default function PricingPage() {
                                     </CardContent>
                                     <CardFooter>
                                         <Link to="/create" className="w-full">
-                                            <Button variant="outline" className="w-full bg-sky-200">
+                                            <Button className="w-full text-white">
                                                 Choose Pro
                                             </Button>
                                         </Link>
@@ -122,7 +122,7 @@ export default function PricingPage() {
                             </StaggerItem>
 
                             <StaggerItem>
-                                <Card className="border-2 hover:border-primary/50 transition-colors duration-300">
+                                <Card className="border-1 hover:border-primary transition-colors duration-300">
                                     <CardHeader>
                                         <CardTitle>Enterprise</CardTitle>
                                         <CardDescription>For teams & organizations</CardDescription>
@@ -161,7 +161,7 @@ export default function PricingPage() {
                                     </CardContent>
                                     <CardFooter>
                                         <Link to="/contact" className="w-full">
-                                            <Button variant="outline" className="w-full bg-sky-200">
+                                            <Button variant="outline" className="w-full">
                                                 Contact Sales
                                             </Button>
                                         </Link>
@@ -174,7 +174,7 @@ export default function PricingPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-10 px-4 bg-muted/50">
+            <section className="py-20 px-4 bg-muted mt-10">
                 <div className="container mx-auto max-w-5xl">
                     <FadeIn>
                         <h2 className="text-3xl font-bold text-center mb-16">Frequently Asked Questions</h2>
@@ -182,7 +182,7 @@ export default function PricingPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <FadeIn direction="up" delay={0.1}>
-                            <div className="p-6 rounded-lg border bg-card">
+                            <div className="p-6 rounded-lg bg-card">
                                 <h3 className="text-xl font-semibold mb-2">Can I cancel my subscription anytime?</h3>
                                 <p className="text-muted-foreground">
                                     Yes, you can cancel your subscription at any time. Your access will continue until the end of your
@@ -192,7 +192,7 @@ export default function PricingPage() {
                         </FadeIn>
 
                         <FadeIn direction="up" delay={0.2}>
-                            <div className="p-6 rounded-lg border bg-card">
+                            <div className="p-6 rounded-lg bg-card">
                                 <h3 className="text-xl font-semibold mb-2">How many cover letters can I create?</h3>
                                 <p className="text-muted-foreground">
                                     Free users can create up to 3 cover letters per month. Pro and Enterprise users have unlimited access.
@@ -201,7 +201,7 @@ export default function PricingPage() {
                         </FadeIn>
 
                         <FadeIn direction="up" delay={0.3}>
-                            <div className="p-6 rounded-lg border bg-card">
+                            <div className="p-6 rounded-lg bg-card">
                                 <h3 className="text-xl font-semibold mb-2">Is my data secure?</h3>
                                 <p className="text-muted-foreground">
                                     Yes, we take data security seriously. Your information is encrypted and never shared with third
@@ -211,7 +211,7 @@ export default function PricingPage() {
                         </FadeIn>
 
                         <FadeIn direction="up" delay={0.4}>
-                            <div className="p-6 rounded-lg border bg-card">
+                            <div className="p-6 rounded-lg bg-card">
                                 <h3 className="text-xl font-semibold mb-2">Do you offer refunds?</h3>
                                 <p className="text-muted-foreground">
                                     We offer a 14-day money-back guarantee if you're not satisfied with our service.

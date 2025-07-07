@@ -10,7 +10,6 @@ import Home from "./components/Home";
 import HowItWorksPage from "./components/HowItWorks";
 import Navbar from "./components/Navbar";
 import PricingPage from "./components/Pricing";
-import SmoothScroll from "./components/SmoothScroll";
 
 function App() {
   return (
@@ -31,10 +30,8 @@ function App() {
                   <Route path="/pricing" element={<PricingPage />} />
                 </Routes>
               </Suspense>
-
             </main>
             <Footer />
-            <SmoothScroll />
           </BrowserRouter>
         </div>
       </ThemeProvider >
