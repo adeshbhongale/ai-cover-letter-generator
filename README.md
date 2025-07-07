@@ -70,7 +70,7 @@ You can customize the generator by editing the `config.json` file:
 {
     "defaultTemplate": "professional",
     "supportedFormats": ["pdf", "docx"],
-    "aiModel": "gpt-4"
+    "aiModel": "GPT-4"
 }
 ```
 
@@ -99,7 +99,7 @@ This project is licensed under the MIT License.
 **Q:** Is my data safe?  
 **A:** Yes, your data is processed locally and not stored.
 
-**Q:** Can I use my own templates?  
+**Q:** Can I use my templates?  
 **A:** Yes, you can add templates in the `templates/` directory.
 
 ---
@@ -115,7 +115,7 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For support or inquiries, contact [support@example.com](mailto:support@example.com).
+For support or questions, please feel free to contact [adeshbhongale03@gmail.com](mailto:adeshbhongale03@gmail.com).
 
 ---
 
