@@ -1,4 +1,5 @@
 import { ArrowRight, Download, FileText, PenTool, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import FadeIn from "./ui-animation/FadeIn";
 import StaggerChildren from "./ui-animation/StaggerChildren";
 import StaggerItem from "./ui-animation/StaggerItem";
